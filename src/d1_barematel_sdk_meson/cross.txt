@@ -1,12 +1,12 @@
 [binaries]
-cross_pass = 'C:\work\work\d1\riscv64-elf-mingw\bin\riscv64-unknown-elf-' 
+cross_pass = '/Users/philipp/src/d1/opt/riscv_default/bin/riscv64-unknown-elf-'
 c = cross_pass + 'gcc'
 cpp = cross_pass + 'g++'
 ar = cross_pass + 'ar'
 strip = cross_pass + 'strip'
 
 [properties]
-cross_pass = 'C:\work\work\d1\riscv64-elf-mingw\bin\riscv64-unknown-elf-' 
+cross_pass = '/Users/philipp/src/d1/opt/riscv_default/bin/riscv64-unknown-elf-'
 objcopy = cross_pass + 'objcopy'
 needs_exe_wrapper = true
 
