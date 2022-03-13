@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 include(cmake/helpers.cmake)
+include(cmake/mksunxi.cmake)  # TODO: FindProgram()
 
 set(CMAKE_TOOLCHAIN_FILE cmake/toolchain.cmake)
 

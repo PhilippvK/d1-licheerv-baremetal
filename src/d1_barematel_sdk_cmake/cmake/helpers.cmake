@@ -17,8 +17,11 @@ function(d1_add_executable target)
     add_custom_command(
         TARGET ${target}
         POST_BUILD
-        COMMAND ${CMAKE_OBJCOPY} ARGS -O binary ${target} ${target}.bin
+        COMMAND ${CMAKE_OBJCOPY} ARGS -O binary ${target}.elf ${target}.bin
+        COMMAND echo "Make header information for brom booting"
+        COMMAND ${MKSUNXI_EXE} ARGS ${target}.bin
         BYPRODUCTS ${target}.bin
     )
+    add_dependencies(${target} mksunxi_project)
 endfunction()
 
